@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Proyectos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #1e1f22;
+            --card-bg: #282a2e;
+            --text-color: #d4d4d4;
+            --primary-color: #4d90f1;
+            --border-color: #3a3d42;
+            --hover-bg: #3a3d42;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        main {
+            width: 100%;
+            max-width: 700px;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-family: 'Fira Code', monospace;
+            text-align: center;
+            color: white;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            font-family: 'Fira Code', monospace;
+            color: var(--primary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            border-left: 3px solid var(--primary-color);
+            padding-left: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: background-color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+            font-family: 'Fira Code', monospace;
+            font-weight: 500;
+        }
+
+        a:hover {
+            background-color: var(--hover-bg);
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        a::before {
+            content: '< >';
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 15px;
+            font-size: 1.1rem;
+        }
+        
+        /* Estilo especial para el archivo RAR */
+        a.download::before {
+            content: '🗃️'; /* Ícono de archivador */
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Índice de Archivos</h1>
+
+        <section id="casos">
+            <h2>Casos de Estudio</h2>
+            <ul>
+                <li><a href="carta.html">carta.html</a></li>
+                <li><a href="caso1.html">caso1.html</a></li>
+                <li><a href="caso2.html">caso2.html</a></li>
+                <li><a href="caso3.html">caso3.html</a></li>
+                <li><a href="caso4.html">caso4.html</a></li>
+                <li><a href="caso5.html">caso5.html</a></li>
+                <li><a href="caso6.html">caso6.html</a></li>
+            </ul>
+        </section>
+
+        <section id="paginas">
+            <h2>Páginas de Ejercicios</h2>
+            <ul>
+                <li><a href="pagina01.html">pagina01.html</a></li>
+                <li><a href="pagina02.html">pagina02.html</a></li>
+                <li><a href="pagina03.html">pagina03.html</a></li>
+                <li><a href="pagina04.html">pagina04.html</a></li>
+                <li><a href="pagina05.html">pagina05.html</a></li>
+                <li><a href="pagina06.html">pagina06.html</a></li>
+                <li><a href="pagina07.html">pagina07.html</a></li>
+                <li><a href="pagina08.html">pagina08.html</a></li>
+                <li><a href="pagina09-eje1.html">pagina09-eje1.html</a></li>
+                <li><a href="pagina09-eje2.html">pagina09-eje2.html</a></li>
+            </ul>
+        </section>
+
+
+
+    </main>
+
+</body>
+</html>
